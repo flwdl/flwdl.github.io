@@ -1,0 +1,151 @@
+<rss version="2.0"><channel><title>FLWDL</title><link>https://flwdl.github.io/</link><description>FLWDL 的网站</description><language>zh</language><copyright>除特别说明外，本站所有内容均采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可</copyright><managingEditor>flwdl@foxmail.com</managingEditor><lastBuildDate>Thu, 15 Jul 2021 19:14:35 +0800</lastBuildDate><generator>Hugo -- gohugo.io</generator><item><title>2 曼海姆定理</title><link>https://flwdl.github.io/posts/2-mannheim-theorem/</link><pubDate>Tue, 23 Feb 2021 13:39:48 +0800</pubDate><author>FLWDL</author><guid>https://flwdl.github.io/posts/2-mannheim-theorem/</guid><description>&lt;p>&lt;strong>曼海姆（Mannheim）定理&lt;/strong>　圆 X 与三角形 ABC 的外切圆内切于点 T，且与 AB、AC 相切，切点分别为 P、Q。线段 PQ 的中点即为三角形 ABC 的内心。&lt;/p>
+&lt;p>&lt;img src="https://flwdl.github.io/images/2-mannheim-theorem.png" alt="图 2-1">&lt;/p>
+&lt;p>&lt;strong>分析&lt;/strong>　做好图我们不难猜测四边形 $PBTI$、四边形 $ITCQ$ 都是圆内接四边形，并且两个四边形相似。而证明这一点并不容易。比较自然的想法是通过外角等于内对角来证明，但用这种想法，会发现两个结论相互依赖。因此我们考虑同一法，做出圆 $QCT$，令其交 $PQ$ 于点 $I'$，不难推出另一组共圆，进而证出 $I'$ 和 $I$ 是同一个点。&lt;/p>
+&lt;p>&lt;strong>证明&lt;/strong>　设 $\odot ACT$ 交 $PQ$ 于点 $I'$。&lt;/p>
+&lt;p>（1）四边形 $PBTI'$、四边形 $I&amp;rsquo;TCQ$ 都是圆内接四边形。&lt;/p>
+&lt;p>四边形 $I&amp;rsquo;TCQ$ 是圆内接四边形已经做出。由此及四边形 $ABCT$ 是圆内接四边形知，$\angle TI&amp;rsquo;Q = \pi - \angle QCT = \angle PBT$，得出四边形 $PBTI'$ 是圆内接四边形。&lt;/p>
+&lt;p>（2）四边形 $PBTI'$ 与四边形 $I&amp;rsquo;TCQ$ 相似。并由此易得 $I'$ 为线段 $PQ$ 的中点。&lt;/p>
+&lt;p>对 $\odot X$ 的切线 $AB$、弦 $PT$ 应用弦切角定理，$\angle BPT= \angle PQT$。又由（1），得 $\triangle PBT \sim \triangle QI&amp;rsquo;T$。类似地，$\triangle PI&amp;rsquo;T \sim \triangle QCT$，得出（2）。&lt;/p>
+&lt;p>由（2）及（1），显然有 $\angle PBI = \angle PTI =\angle QTC$。延长 $TQ$ 交圆 $O$ 于点 $S$ 熟知在这样的图中，$\angle ATS = \angle STC$（对于 $A$、$T$、$P$、$B$ 也是），只要证 $\angle ATS = \angle ABI'$。由此及图形猜测 $B$、$I'$、$S$ 共线，如果猜测正确，两角对应同一个弧，即可得出 $BI'$ 平分 $\angle ABC$。由对称性，对于 $C$ 也有同样的性质，进而 Mannheim 定理成立。&lt;/p>
+&lt;p>（3）$B$、$I'$、$S$ 三点共线。&lt;/p>
+&lt;p>由（1），$\angle ABI' = \angle PTI'$。由（2），$\angle PTI' = \angle STC$。熟知 $\angle ATS = \angle STC$，而 $\angle ATS = \angle ABS$，得出 $\angle ABI' = \angle ABS$，即（3）。&lt;/p>
+&lt;p>证毕。&lt;/p></description></item><item><title>FGLMCS 成员手册（更新中）</title><link>https://flwdl.github.io/posts/manual-for-the-members-of-the-minecraft-server/</link><pubDate>Wed, 17 Feb 2021 20:36:07 +0800</pubDate><author>FLWDL</author><guid>https://flwdl.github.io/posts/manual-for-the-members-of-the-minecraft-server/</guid><description>&lt;p>本文章已开启评论。教程以 Windows 10 专业版 64 位操作系统（版本 20H2）为例。&lt;/p>
+&lt;h2 id="1安装-minecraft">1　安装 Minecraft&lt;/h2>
+&lt;p>这里以使用 HMCL 启动器为例。&lt;/p>
+&lt;h3 id="11安装-jre-和-jfx">1.1　安装 JRE 和 JFX&lt;/h3>
+&lt;p>下载群文件中的 &lt;code>zulu8.52.0.23-ca-fx-jre8.0.282-win_x64.zip&lt;/code>，解压。点进去，打开 &lt;code>bin&lt;/code> 文件夹，在资源管理的地址栏复制路径，加到系统环境变量 &lt;code>Path&lt;/code> 中。&lt;/p>
+&lt;p>系统环境变量的修改方法如下。&lt;/p>
+&lt;ol>
+&lt;li>单次敲击 Windows 徽标键，直接打字。输入「编辑系统环境变量」，出现搜索结果后单击「打开」；&lt;/li>
+&lt;li>单击「环境变量」，在系统环境变量的框里找到 &lt;code>Path&lt;/code> 并选中；&lt;/li>
+&lt;li>单击「编辑」；&lt;/li>
+&lt;li>在上一步弹出的窗口中单击「新建」，输入你刚刚复制的路径，单击「确定」。&lt;/li>
+&lt;/ol>
+&lt;p>其他平台的 Zulu JDK 安装请到 Zulu JDK 官网。&lt;/p>
+&lt;h3 id="12安装-hmcl">1.2　安装 HMCL&lt;/h3>
+&lt;p>群文件里找到启动器文件夹，下载其中的 &lt;code>HMCL.zip&lt;/code> 并解压。&lt;/p>
+&lt;h3 id="13配置-hmcl">1.3　配置 HMCL&lt;/h3>
+&lt;p>这里以离线登陆方式为例。&lt;/p>
+&lt;p>打开解压后产生的文件夹，双击 &lt;code>HMCL.exe&lt;/code>。打开后立即会弹出窗口，登录模式选择离线登录，再输入你的用户名。&lt;/p>
+&lt;p>单击左侧栏中的「当前目录」，在右侧选中「官方启动器目录」。依次单击「版本列表」「安装新的游戏版本」「1.16.5」「Fabric」，选中第一个版本，单击「安装」等待安装完成。&lt;/p>
+&lt;p>Minecraft 安装完毕。&lt;/p>
+&lt;h2 id="2模组">2　模组&lt;/h2>
+&lt;h3 id="21加入模组">2.1　加入模组&lt;/h3>
+&lt;p>打开 HMCL 启动器。点击左侧的游戏列表中你想修改的版本，这里以 &lt;code>1.16.5&lt;/code> 为例。点击 &lt;code>1.16.5&lt;/code>，点击上方标签页中的「模组管理」，将插件 jar 文件拖入即可。每个插件左侧的对号表示启用这个模组。单击一个卡片使它整个变蓝表示选中，可以进行一些选项卡里的操作（如删除）。&lt;/p>
+&lt;h3 id="22常见模组的基本使用方法">2.2　常见模组的基本使用方法&lt;/h3>
+&lt;h2 id="3加入材质包">3　加入材质包&lt;/h2>
+&lt;p>在资源管理器地址栏键入 &lt;code>%appdata%/.minecraft&lt;/code>，按 Enter。找到 &lt;code>resourcepacks&lt;/code> 目录，将材质包（&lt;code>.zip&lt;/code> 文件）粘贴进去。&lt;/p>
+&lt;h2 id="4加入光影">4　加入光影&lt;/h2>
+&lt;p>加不起，再见（实际是 Fabric 和 OptiFine 不兼容，以前还有个 optiFabric，好像问题一堆，很久不看这些了，不很清楚。我选择不装光影，对光影无感）。&lt;/p>
+&lt;h2 id="5mcdr-插件基本使用方法">5　MCDR 插件基本使用方法&lt;/h2>
+&lt;h3 id="51quickbackupm">5.1　QuickBackupM&lt;/h3></description></item><item><title>关于</title><link>https://flwdl.github.io/about/</link><pubDate>Sun, 07 Feb 2021 16:47:09 +0800</pubDate><author>FLWDL</author><guid>https://flwdl.github.io/about/</guid><description>&lt;p>这里是 FLWDL，名字是无实义的随机字母。文章主要与数学和折腾着玩的一些小东西（比如说这个网站）有关。&lt;/p>
+&lt;p>支持 RSS 订阅全文推送，可以&lt;em>和其它的源聚合&lt;/em>（各种网站的文章会推送到您的阅读器，聚合在一起。打开阅读器就可以看到您所有感兴趣的网站发布的内容而无需挨个访问）在您的 RSS 阅读器中而无需访问本站，更没更新也可以通过打开阅读器立即知道，不用刻意来看一眼。点击页面右上角的「订阅」，或&lt;a href="https://flwdl.github.io/subscribe">点击此处&lt;/a>了解更多信息。&lt;/p>
+&lt;p>文章不会经常发，毕竟以我的水平原创不出来很多东西。以数学文章为例，写学过的数学知识的总结的话，打 LaTeX 和配图都是很费劲的——这些事在脑子里过一遍就好了。要是照搬教科书或是习题集也很无聊的不是吗，学习系统的数学知识需要看书、练习、交流（比如一些解题的动机、常见的想法，竞赛书往往会省略这些东西）、积累，看几个网页或写几个 post 是不行的甚至是浪费时间的。&lt;/p>
+&lt;p>本站&lt;/p>
+&lt;ul>
+&lt;li>使用 &lt;a href="https://gohugo.io/">Hugo&lt;/a> 作为 Static Site Generator。&lt;/li>
+&lt;li>引入 &lt;a href="https://katex.org">KaTeX&lt;/a>（&lt;a href="https://github.com/flwdl/website/blob/main/static/third-party/katex/LICENSE">License&lt;/a>）渲染数学公式。&lt;/li>
+&lt;li>引入 &lt;a href="https://utteranc.es">Utterances&lt;/a>（&lt;a href="https://github.com/utterance/utterances/blob/master/LICENSE.md">License&lt;/a>）做评论系统。&lt;/li>
+&lt;li>&lt;a href="https://github.com/flwdl/website">源码&lt;/a>放在了 GitHub。&lt;/li>
+&lt;li>着重号的实现来自排版框架「&lt;a href="https://github.com/ethantw/Han">汉字标准格式&lt;/a>」的部分源码。&lt;/li>
+&lt;/ul>
+&lt;p>除特别说明外，本站文章采用&lt;a href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议&lt;/a>进行许可。&lt;/p></description></item><item><title>留言板</title><link>https://flwdl.github.io/guestbook/</link><pubDate>Sun, 07 Feb 2021 16:28:03 +0800</pubDate><author>FLWDL</author><guid>https://flwdl.github.io/guestbook/</guid><description>&lt;p>现在本站支持评论系统了。本页面和所有数学文章均会打开评论系统，若在应该出现评论系统的页面未出现评论系统，请刷新一次页面，滑动到页面底部并耐心等待。&lt;/p>
+&lt;h2 id="如何评论">如何评论&lt;/h2>
+&lt;p>评论系统由 &lt;a href="https://utteranc.es/">Utterances&lt;/a> 实现。评论需要登陆 GitHub 账户，没有的话可以&lt;a href="https://github.com">注册&lt;/a>一个。&lt;/p>
+&lt;p>点击评论框右下角 Sign in with Github，在弹出的页面中（如果没有登录 GitHub，这个页面会让你登录，登录即可）点击 Authorize utterances，等待跳转回要评论的页面。&lt;/p>
+&lt;p>在评论框上方点击 Write 选项卡，可以在输入框中写评论。这里支持 &lt;a href="https://markdown.cn">Markdown&lt;/a>，不知道的话正常写也不会有影响。如果您使用了 Markdown，可以在评论框上方点击 Preview 选项卡来预览。&lt;/p></description></item><item><title>订阅</title><link>https://flwdl.github.io/subscribe/</link><pubDate>Sat, 06 Feb 2021 12:38:46 +0800</pubDate><author>FLWDL</author><guid>https://flwdl.github.io/subscribe/</guid><description>&lt;p>&lt;a href="https://flwdl.github.io/index.xml">右击（电脑）或长按（手机）此处&lt;/a>复制订阅链接（RSS 2.0）。&lt;/p>
+&lt;p>如果不了解 RSS，推荐使用&lt;a href="https://rss.anyant.com">蚁阅&lt;/a>，并阅读 &lt;a href="https://www.yuque.com/guyskk/rssant/lmq3kk">RSS 阅读指南&lt;/a>&lt;/p></description></item><item><title>1 首题</title><link>https://flwdl.github.io/posts/1-first-problem/</link><pubDate>Fri, 05 Feb 2021 19:00:00 +0800</pubDate><author>FLWDL</author><guid>https://flwdl.github.io/posts/1-first-problem/</guid><description>&lt;p>原先的证明有几个地方做的太繁了，重新写一个。&lt;/p>
+&lt;p>&lt;img src="https://flwdl.github.io/images/1-first-problem-img1.png" alt="图 1-1">&lt;/p>
+&lt;p>如图，过三角形 ABC 的内心 I 的直线交三角形 ABC 的外接圆于 Q、P。AP 交 BC 于点 E，Q 交 BC 于 点 F。求证：A、I、E、F 四点共圆。&lt;/p>
+&lt;p>&lt;img src="https://flwdl.github.io/images/1-first-problem-img3.png" alt="图 1-3">&lt;/p>
+&lt;p>&lt;strong>证明&lt;/strong>　如图，连接 $AI$ 并延长至外接圆上的点 $S$，设 $AS$ 交 $BC$ 于点 $U$。由 $AS$ 平分 $\angle BAC$ 及 $S$、$A$、$B$、$C$ 共圆，&lt;/p>
+&lt;div>
+$$
+\begin{aligned}
+\angle SUC &amp;= \angle SAC + \angle BCA \\
+&amp;= \angle SAB + \angle BCA \\
+&amp;= \angle SCB + \angle BCA \\
+&amp;= \angle SCA \\
+&amp;= \angle SPA.
+\end{aligned}
+$$
+&lt;/div>
+&lt;p>由 $\angle SUC = \angle SPA$，不难想到 $SP$ 与 $BC$ 有一交点 $T$，显然有 $\triangle SUT \sim \triangle SUA$，&lt;strong>得到 $A$、$U$、$P$、$T$ 四点共圆&lt;/strong>。由 $\angle SUC = \angle SCA$，得到 $\triangle SUC \sim \triangle SCA$，则 $SC^2 = SU \cdot SA$。由对圆 AUPT 的圆幂定理以及「鸡爪定理」得到 $SI^2 = SC^2 = SU \cdot SA = SP \cdot ST$，&lt;strong>则 $\triangle SPI \sim \triangle SIT$&lt;/strong>。&lt;/p>
+&lt;p>&lt;strong>注意到 $E$ 为 $\triangle PIT$ 的垂心&lt;/strong>。这可以通过 $X$、$Y$、$P$、$T$ 四点共圆推出。$\angle XPY = \angle AIP = \angle SIP - \angle SAP = \angle STI - \angle STU = \angle XTY$，得到 $X$、$Y$、$P$、$T$ 四点共圆。&lt;/p>
+&lt;p>至此，有 $\angle IEY = \angle IPT = \pi - \angle SPI = \pi - \angle IAQ = \angle IAF$，故 A、I、E、F 四点共圆。$\Box$&lt;/p>
+&lt;p>以下为原文——&lt;/p>
+&lt;blockquote>
+&lt;p>这大概是我独立做出的第一道比较复杂的（至少看起来是这样）竞赛平面几何题（泪目）。&lt;/p>
+&lt;p>&lt;img src="https://flwdl.github.io/images/1-first-problem-img1.png" alt="图 1-1">&lt;/p>
+&lt;p>如图，过三角形 ABC 的内心 I 的直线交三角形 ABC 的外接圆于 Q、P。AP 交 BC 于点 E，Q 交 BC 于 点 F。求证：A、I、E、F 四点共圆。&lt;/p>
+&lt;p>&lt;img src="https://flwdl.github.io/images/1-first-problem-img2.png" alt="图 1-2">&lt;/p>
+&lt;p>这堆辅助线的做法都是有动机的，先看下面的文字证明。&lt;/p>
+&lt;p>&lt;strong>原证明&lt;/strong>　如图，连接 $AI$ 并延长至外接圆上的点 $S$，设 $AS$ 交 $BC$ 于点 $U$。由 $AS$ 平分 $\angle BAC$ 及 $S$、$A$、$B$、$C$ 共圆，&lt;/p>
+&lt;div>
+$$
+\begin{aligned}
+\angle SUC &amp;= \angle SAC + \angle BCA \\
+&amp;= \angle SAB + \angle BCA \\
+&amp;= \angle SCB + \angle BCA \\
+&amp;= \angle SCA.
+\end{aligned}
+$$
+&lt;/div>
+&lt;p>由此得到 $\triangle SUC \backsim \triangle SCA$，得 $SI^2 = SC^2 = SU \cdot SA$（第一个等号可由熟知的「鸡爪定理」得到）。&lt;/p>
+&lt;p>希望再找到一个像 $SU \cdot SA$ 的量，由此可以确定一些圆内接四边形，对目标有所帮助。&lt;/p>
+&lt;p>还是利用 $\angle SUC = \angle SCA$。结合 $\angle SCA = \angle SPA$，不难想到在远处 $SP$ 与 $BC$ 有一交点 $T$，显然有 $\triangle SUT \sim \triangle SUA$，得到 $A$、$U$、$P$、$T$ 四点共圆。&lt;/p>
+&lt;p>由圆幂定理，$SP \cdot ST = SU \cdot SA$。那 $SI^2$ 也 $= SP \cdot ST$，这样，$\triangle SPI \backsim \triangle SIT$。注意，&lt;/p>
+&lt;div>
+$$
+\begin{aligned}
+(\angle SAP + \angle API &amp;=) \angle SIP \\
+&amp;= \angle STI \\
+(&amp;= \angle STU + \angle ITU),
+\end{aligned}
+$$
+&lt;/div>
+&lt;p>而 $\angle SAP = \angle STU$，那 $\angle API = \angle ITU$。设 $AP$ 交 $IT$ 于点 $X$，则 $X$、$Y$、$P$、$T$ 四点共圆。由 &amp;gt; $TY \perp IP$，$PX \perp IT$，$E$ 为 $\triangle PIT$ 的垂心。&lt;/p>
+&lt;p>$E$ 为垂心，$IT \perp PT$，$TE \perp IP$，知 $\angle PIE = \angle PTE$，进而 $\angle PIE = \angle PTE = \angle PAI$。我们希望&lt;/p>
+&lt;div>
+$$
+\begin{aligned}
+(\frac{\pi}{2} - \angle PIE &amp;= )\angle IEB \\
+&amp;= \angle IAF \\
+(&amp;= \angle PAI + \angle EAF),
+\end{aligned}
+$$
+&lt;/div>
+&lt;p>即证 $\angle SOP + \angle EAF = \dfrac{\pi}{2}$。&lt;/p>
+&lt;p>由于 $OP \parallel PQ$，$\angle SOP = \angle OPQ$。由外心性质（$\angle OPQ + \angle QBP = \dfrac{\pi}{2}$），那么 $\angle SOP + \angle EAF = \dfrac{\pi}{2}$ 等价于 $\angle EAF = \angle QBP$。加之我们有&lt;/p>
+&lt;div>
+$$
+\begin{aligned}
+\angle QBP &amp;= \angle QBA + \angle ABC + \angle CBP, \\
+\angle EAF &amp;= \angle EAC + \angle CAF, \\
+\angle CBP &amp;= \angle CAP = \angle EAC.
+\end{aligned}
+$$
+&lt;/div>
+&lt;p>于是&lt;/p>
+&lt;div>
+$$
+\begin{aligned}
+&amp;\angle EAF = \angle QBP \\
+\Harr &amp;(\angle QBA + \angle ABC = ) \angle QBC = \angle CAF \\
+\Harr &amp;\frac{\pi}{2} - \angle BQP = \pi - \angle QAC \\
+\Harr &amp;\angle QAC - \angle BQP = \frac{\pi}{2} \\
+\Harr &amp;\angle QAC - \angle BAP = \frac{\pi}{2} \\
+\Harr &amp;\angle QAB + \angle PAC = \frac{\pi}{2}.
+\end{aligned}
+$$
+&lt;/div>
+&lt;p>$\angle QAB + \angle PAC = \dfrac{\pi}{2}$ 是显然的。$\Box$&lt;/p>
+&lt;/blockquote></description></item><item><title>Git 自动转换换行符</title><link>https://flwdl.github.io/posts/git-autocrlf/</link><pubDate>Mon, 01 Feb 2021 19:00:00 +0800</pubDate><author>FLWDL</author><guid>https://flwdl.github.io/posts/git-autocrlf/</guid><description>&lt;p>纯文本文件的换行符分为两种，LF 和 CRLF。不同操作系统使用的换行符有不同，*nix 操作系统使用 LF，Windows 使用 CRLF。为了避免一些麻烦，一个 repository 中，文件的换行符应当保持统一。在 Git 中，就有自动转换换行符的功能，由 &lt;code>core.autocrlf&lt;/code> 来设置。&lt;/p>
+&lt;p>&lt;code>autocrlf&lt;/code> 有三个值，&lt;code>true&lt;/code>、&lt;code>false&lt;/code>、&lt;code>input&lt;/code>。将 &lt;code>core.autocrlf&lt;/code> 的值设置为 &lt;code>&amp;lt;value&amp;gt;&lt;/code> 可以使用命令&lt;/p>
+&lt;pre>&lt;code>git config core.autocrlf &amp;lt;value&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;p>如果其值为 &lt;code>true&lt;/code>，将会用 CRLF 替换文件中的 LF；如果为 &lt;code>false&lt;/code>，会保持文件中的换行符；如果为 &lt;code>input&lt;/code>，会用 LF 替换文件中的 CRLF。&lt;/p>
+&lt;p>在本站的源码中，文件换行符统一使用 LF。&lt;/p></description></item><item><title>创站</title><link>https://flwdl.github.io/posts/new-site/</link><pubDate>Sun, 31 Jan 2021 19:00:00 +0800</pubDate><author>FLWDL</author><guid>https://flwdl.github.io/posts/new-site/</guid><description>&lt;p>&lt;img src="https://flwdl.github.io/images/pascal-theorem.png" alt="Pascal 定理" title="Pascal 定理">&lt;/p>
+&lt;p>&lt;img src="https://flwdl.github.io/images/kamijou-touma.png" alt="上条当麻（出自『とある魔術の禁書目録』" title="上条当麻（出自 『とある魔術の禁書目録』）">&lt;/p>
+&lt;p>&lt;img src="https://flwdl.github.io/images/minecraft.jpg" alt="Minecraft" title="Minecraft">&lt;/p>
+&lt;p>&lt;img src="https://flwdl.github.io/images/space-shuttle.jpg" alt="纸飞机「太空梭」" title="纸飞机「太空梭」">&lt;/p></description></item></channel></rss>

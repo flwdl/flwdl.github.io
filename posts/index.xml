@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文章 on FLWDL</title><link>https://flwdl.github.io/posts/</link><description>Recent content in 文章 on FLWDL</description><generator>Hugo -- gohugo.io</generator><language>zh</language><managingEditor>flwdl@foxmail.com (FLWDL)</managingEditor><webMaster>flwdl@foxmail.com (FLWDL)</webMaster><copyright>除特别说明外，本站所有内容均采用知识共享署名-相同方式共享 4.0 国际许可协议进行许可</copyright><lastBuildDate>Tue, 23 Feb 2021 13:39:48 +0800</lastBuildDate><atom:link href="https://flwdl.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>2 曼海姆定理</title><link>https://flwdl.github.io/posts/2-mannheim-theorem/</link><pubDate>Tue, 23 Feb 2021 13:39:48 +0800</pubDate><author>flwdl@foxmail.com (FLWDL)</author><guid>https://flwdl.github.io/posts/2-mannheim-theorem/</guid><description>曼海姆（Mannheim）定理　圆 X 与三角形 ABC 的外切圆内切于点 T，且与 AB、AC 相切，切点分别为 P、Q。线段 PQ 的中点即为三角形 ABC 的内心。
+分析　做好图我们不难猜测四边形 $PBTI$、四边形 $ITCQ$ 都是圆内接四边形，并且两个四边形相似。而证明这一点并不容易。比较自然的想法是通过外角等于内对角来证明，但用这种想法，会发现两个结论相互依赖。因此我们考虑同一法，做出圆 $QCT$，令其交 $PQ$ 于点 $I'$，不难推出另一组共圆，进而证出 $I'$ 和 $I$ 是同一个点。
+证明　设 $\odot ACT$ 交 $PQ$ 于点 $I'$。
+（1）四边形 $PBTI'$、四边形 $I&amp;rsquo;TCQ$ 都是圆内接四边形。
+四边形 $I&amp;rsquo;TCQ$ 是圆内接四边形已经做出。由此及四边形 $ABCT$ 是圆内接四边形知，$\angle TI&amp;rsquo;Q = \pi - \angle QCT = \angle PBT$，得出四边形 $PBTI'$ 是圆内接四边形。
+（2）四边形 $PBTI'$ 与四边形 $I&amp;rsquo;TCQ$ 相似。并由此易得 $I'$ 为线段 $PQ$ 的中点。
+对 $\odot X$ 的切线 $AB$、弦 $PT$ 应用弦切角定理，$\angle BPT= \angle PQT$。又由（1），得 $\triangle PBT \sim \triangle QI&amp;rsquo;T$。类似地，$\triangle PI&amp;rsquo;T \sim \triangle QCT$，得出（2）。</description></item><item><title>FGLMCS 成员手册（更新中）</title><link>https://flwdl.github.io/posts/manual-for-the-members-of-the-minecraft-server/</link><pubDate>Wed, 17 Feb 2021 20:36:07 +0800</pubDate><author>flwdl@foxmail.com (FLWDL)</author><guid>https://flwdl.github.io/posts/manual-for-the-members-of-the-minecraft-server/</guid><description>本文章已开启评论。教程以 Windows 10 专业版 64 位操作系统（版本 20H2）为例。
+1　安装 Minecraft 这里以使用 HMCL 启动器为例。
+1.1　安装 JRE 和 JFX 下载群文件中的 zulu8.52.0.23-ca-fx-jre8.0.282-win_x64.zip，解压。点进去，打开 bin 文件夹，在资源管理的地址栏复制路径，加到系统环境变量 Path 中。
+系统环境变量的修改方法如下。
+单次敲击 Windows 徽标键，直接打字。输入「编辑系统环境变量」，出现搜索结果后单击「打开」； 单击「环境变量」，在系统环境变量的框里找到 Path 并选中； 单击「编辑」； 在上一步弹出的窗口中单击「新建」，输入你刚刚复制的路径，单击「确定」。 其他平台的 Zulu JDK 安装请到 Zulu JDK 官网。
+1.2　安装 HMCL 群文件里找到启动器文件夹，下载其中的 HMCL.zip 并解压。
+1.3　配置 HMCL 这里以离线登陆方式为例。
+打开解压后产生的文件夹，双击 HMCL.exe。打开后立即会弹出窗口，登录模式选择离线登录，再输入你的用户名。
+单击左侧栏中的「当前目录」，在右侧选中「官方启动器目录」。依次单击「版本列表」「安装新的游戏版本」「1.16.5」「Fabric」，选中第一个版本，单击「安装」等待安装完成。
+Minecraft 安装完毕。
+2　模组 2.1　加入模组 打开 HMCL 启动器。点击左侧的游戏列表中你想修改的版本，这里以 1.16.5 为例。点击 1.16.5，点击上方标签页中的「模组管理」，将插件 jar 文件拖入即可。每个插件左侧的对号表示启用这个模组。单击一个卡片使它整个变蓝表示选中，可以进行一些选项卡里的操作（如删除）。
+2.2　常见模组的基本使用方法 3　加入材质包 在资源管理器地址栏键入 %appdata%/.</description></item><item><title>1 首题</title><link>https://flwdl.github.io/posts/1-first-problem/</link><pubDate>Fri, 05 Feb 2021 19:00:00 +0800</pubDate><author>flwdl@foxmail.com (FLWDL)</author><guid>https://flwdl.github.io/posts/1-first-problem/</guid><description>原先的证明有几个地方做的太繁了，重新写一个。
+如图，过三角形 ABC 的内心 I 的直线交三角形 ABC 的外接圆于 Q、P。AP 交 BC 于点 E，Q 交 BC 于 点 F。求证：A、I、E、F 四点共圆。
+证明　如图，连接 $AI$ 并延长至外接圆上的点 $S$，设 $AS$ 交 $BC$ 于点 $U$。由 $AS$ 平分 $\angle BAC$ 及 $S$、$A$、$B$、$C$ 共圆，
+$$ \begin{aligned} \angle SUC &amp;= \angle SAC + \angle BCA \\ &amp;= \angle SAB + \angle BCA \\ &amp;= \angle SCB + \angle BCA \\ &amp;= \angle SCA \\ &amp;= \angle SPA. \end{aligned} $$ 由 $\angle SUC = \angle SPA$，不难想到 $SP$ 与 $BC$ 有一交点 $T$，显然有 $\triangle SUT \sim \triangle SUA$，得到 $A$、$U$、$P$、$T$ 四点共圆。由 $\angle SUC = \angle SCA$，得到 $\triangle SUC \sim \triangle SCA$，则 $SC^2 = SU \cdot SA$。由对圆 AUPT 的圆幂定理以及「鸡爪定理」得到 $SI^2 = SC^2 = SU \cdot SA = SP \cdot ST$，则 $\triangle SPI \sim \triangle SIT$。</description></item><item><title>Git 自动转换换行符</title><link>https://flwdl.github.io/posts/git-autocrlf/</link><pubDate>Mon, 01 Feb 2021 19:00:00 +0800</pubDate><author>flwdl@foxmail.com (FLWDL)</author><guid>https://flwdl.github.io/posts/git-autocrlf/</guid><description>纯文本文件的换行符分为两种，LF 和 CRLF。不同操作系统使用的换行符有不同，*nix 操作系统使用 LF，Windows 使用 CRLF。为了避免一些麻烦，一个 repository 中，文件的换行符应当保持统一。在 Git 中，就有自动转换换行符的功能，由 core.autocrlf 来设置。
+autocrlf 有三个值，true、false、input。将 core.autocrlf 的值设置为 &amp;lt;value&amp;gt; 可以使用命令
+git config core.autocrlf &amp;lt;value&amp;gt; 如果其值为 true，将会用 CRLF 替换文件中的 LF；如果为 false，会保持文件中的换行符；如果为 input，会用 LF 替换文件中的 CRLF。
+在本站的源码中，文件换行符统一使用 LF。</description></item><item><title>创站</title><link>https://flwdl.github.io/posts/new-site/</link><pubDate>Sun, 31 Jan 2021 19:00:00 +0800</pubDate><author>flwdl@foxmail.com (FLWDL)</author><guid>https://flwdl.github.io/posts/new-site/</guid><description/></item></channel></rss>
